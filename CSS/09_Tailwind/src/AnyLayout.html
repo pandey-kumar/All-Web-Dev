@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black">
+    <!-- 1. EQUAL PORTION DESIGN -->
+
+    <div class="grid m-4 p-2 sm:grid-cols-2 gap-3">
+        <div
+          class="bg-orange-600 min-h-[100px] shadow rounded"
+        ></div>
+        <div
+          class="bg-teal-600 min-h-[100px]  shadow rounded"
+        ></div>
+      </div>
+
+    // with multiple divs
+
+    <!-- <div class="grid m-4 gap-4 sm:grid-cols-4 ">
+        <div
+          class="bg-orange-600 min-h-[100px]  shadow rounded"
+        ></div>
+        <div
+          class="bg-teal-600 min-h-[100px]  shadow rounded"
+        ></div>
+        <div
+          class="bg-red-600 min-h-[100px]  shadow rounded"
+        ></div>
+        <div
+          class="bg-purple-600 min-h-[100px]  shadow rounded"
+        ></div> -->
+
+    <!-- 2 Unequal parts - Generally on the designer devides the column into the 12 parts as a parent and then decide what part to give to whom as col-span -->
+<!-- 
+    <div class="grid m-4 gap-4 sm:grid-cols-12 grid-cols-2">
+      <div
+        class="bg-orange-600 min-h-[100px] shadow rounded sm:col-span-2"
+      ></div>
+      <div
+        class="bg-teal-600 min-h-[100px] shadow rounded sm:col-span-10"
+      ></div>
+    </div> -->
+
+<!-- Lets try with three columns -->
+
+    <!-- <div class="grid m-4 gap-4 sm:grid-cols-12">
+      <div
+        class="bg-orange-600 min-h-[100px] shadow rounded sm:col-span-2 sm:block hidden"
+      ></div>
+      <div
+        class="bg-teal-600 min-h-[100px] shadow rounded sm:col-span-8"
+      ></div>
+      <div
+        class="bg-purple-600 min-h-[100px] shadow rounded sm:col-span-2 sm:block hidden"
+      ></div>
+    </div> -->
+  </body>
+</html>

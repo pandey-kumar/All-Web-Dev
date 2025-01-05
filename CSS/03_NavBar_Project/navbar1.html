@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav bar Variations</title>
+
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #171717;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        color: white;
+      }
+      h1 {
+        margin-bottom: 50px;
+        margin-top: 30px;
+      }
+      .navbar1 ul {
+        background-color: #ffffff;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        font-weight: bold;
+      }
+      .navbar1 li {
+        display: inline;
+      }
+      .navbar1 a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        /* background-color: orange; */
+        padding: 5px 15px;
+        position: relative;
+      }
+      
+      .navbar1 a::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: blue;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      .navbar1 a:hover::after {
+          transform: scaleX(1);
+        }
+        .navbar1 .login-btn {
+          padding: 5px 15px;
+          background-color: rgb(87, 87, 255);
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover{
+            transition: transform 0.3s ease-in-out;
+            background-color: blue;
+
+          }
+        }
+    </style>
+  </head>
+  <body>
+      <div class="navbar1">
+          <h1>Variation 1:- Horizontal with underline Effect</h1>
+          <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button class="login-btn">LogIn</button></li>
+      </ul>
+    </div>
+  
+ 
+  </body>
+</html>

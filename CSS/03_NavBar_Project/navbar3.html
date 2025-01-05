@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar 3</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(91, 91, 91);
+      padding: 0;
+      margin: 0;
+    }
+    h1 {
+      margin-bottom: 50px;
+    }
+    .nav3 {
+      background-color: #fff;
+    }
+    .nav3 ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 15px;
+    }
+    .nav3 a {
+      text-decoration: none;
+      display: block;
+      font-size:large;
+      font-weight: bold;
+    
+    }
+    .nav3 .dropdown-content {
+      display: none;
+    }
+    .nav3 .dropdown:hover .dropdown-content {
+      position: absolute;
+      display: block;
+      background-color: white;
+      padding: 30px;
+      margin-left: -40px;
+      border-radius: 5px;
+    }
+    .dropdown-content a{
+        font-weight: bold;
+        margin-bottom: 10px;
+        &:hover{
+            background-color:rgb(166, 255, 255);
+            border-radius: 4px;
+        }
+
+    }
+    .nav3 li a:hover{
+        font-size:xx-large;
+
+    }
+    .nav3 .login-btn{
+        font-size: large;
+        border:none;
+        padding: 10px 30px;
+        border-radius: 5px;
+        background-color:greenyellow;
+        &:hover{
+            background-color:rgb(0, 193, 0);
+            border: 1px solid black;
+        }
+
+    }
+    
+  </style>
+  <body>
+    <div class="navbar3">
+      <h1>Variation 3:- Horizontal with drop down</h1>
+      <nav class="nav3">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">About</a>
+            <div class="dropdown-content">
+              <a href="#">Our Story</a>
+              <a href="#">Team</a>
+              <a href="#">Contact us</a>
+            </div>
+          </li>
+          <li><a href="#">Products</a></li>
+          <li><button class="login-btn">LogIn</button></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

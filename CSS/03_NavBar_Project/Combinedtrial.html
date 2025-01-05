@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Navbars</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(64, 64, 64);
+      padding: 0;
+      margin: 0;
+    }
+    h1 {
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .nav {
+      background-color: #00aa0b;
+      border-radius: 5px;
+      width: 200px;
+      height: 100vh;
+      /* padding: 2px; */
+    }
+    .navbar2 ul {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+      display: block;
+      padding: 40px;
+      list-style-type: none;
+    }
+    .navbar2 li {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      &:hover {
+        background-color: #00832c;
+        border-radius: 5px;
+      }
+      position: relative;
+    }
+    .navbar2 a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      position: relative;
+    }
+    .navbar2 li::after{
+      position:absolute;
+      background-color: #015712;
+      content: "";
+      bottom: 0;
+      left: 0;
+      height:2px;
+      width: 100%;
+      transform: scaleX(0);
+      transition: transform 0.4s ease-in-out ;
+
+      
+    }
+    .navbar2 li:hover::after{
+      transform: scaleX(1);
+
+    }
+    .navbar2 .login-btn {
+      font-size: large;
+      color: white;
+      font-weight: bold;
+      background-color: rgb(2, 255, 2);
+      border: none;
+      width: 100%;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      &:hover {
+        background-color: rgb(0, 94, 0);
+        border: 2px solid white;
+      }
+    }
+      h1 {
+        color: white;
+      }
+      h1 {
+        margin-bottom: 50px;
+        margin-top: 30px;
+      }
+      .navbar1 ul {
+        background-color: #ffffff;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        font-weight: bold;
+      }
+      .navbar1 li {
+        display: inline;
+      }
+      .navbar1 a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        /* background-color: orange; */
+        padding: 5px 15px;
+        position: relative;
+      }
+      
+      .navbar1 a::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: blue;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+      .navbar1 a:hover::after {
+          transform: scaleX(1);
+        }
+        .navbar1 .login-btn {
+          padding: 5px 15px;
+          background-color: rgb(87, 87, 255);
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover{
+            transition: transform 0.3s ease-in-out;
+            background-color: blue;
+
+          }
+        }
+  </style>
+  <body>
+     <div class="navbar1">
+          <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button class="login-btn">LogIn</button></li>
+      </ul>
+    </div>
+    <div class="navbar2">
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <button class="login-btn">LogIn</button>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

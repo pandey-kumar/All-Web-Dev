@@ -1,0 +1,12 @@
+.redclr{
+    color: red;
+}
+
+.greenclr{
+    color: green;
+}
+
+#biggerfnt{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    font-size: larger;
+}

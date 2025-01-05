@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My login page</title>
+    <style>
+        body{
+            background-color:#212121;
+            margin: 0px;
+            padding:0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size:25px;
+            font-weight: bold;
+        }
+        .card{
+            background-color:white;
+            width: 400px;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        form{
+            display:flex;
+            flex-direction: column;
+        }
+        input{
+            border-radius: 4px;
+            padding:10px;
+            margin-bottom: 15px;
+            border:1px solid black;
+        }
+        .names{
+            display: flex;
+            justify-content: space-between;
+        }
+        .password{
+            display: flex;
+            justify-content: space-around;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-around;
+        }
+        #btn{
+            padding:10px;
+        }
+        button{
+            padding: 10px;
+            background-color: rgb(176, 253, 62);
+            color: white;
+            font-weight: bolder;
+            font-size: larger;
+            border-radius: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            &:hover{
+                background-color:green;
+                border: 2px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="login">Login</div>
+        <form>
+            <input type="email" placeholder="Email">
+        <div class="names">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+        </div>
+        <div class="password">            
+            <input type="password" placeholder="password">
+        </div>
+
+        <div class="btn">
+            <button type="submit" id="btn">Sign Up</button>
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>

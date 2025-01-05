@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition and Animation</title>
+    <style>
+      /* Styles for both divs */
+      #root,
+      #root2 {
+        margin-top: 50px;
+        background-color: red;
+        display: flex;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        align-items: center;
+        font-size: x-large;
+        justify-content: center;
+        color: white;
+      }
+
+      /* Transition on #root */
+      #root {
+        transition: width 2s ease, background-color 2s ease;
+      }
+
+      #root:hover {
+        background-color: green;
+        border: 3px solid white;
+        width: 500px;
+      }
+
+      /* Animation on #root2 */
+      #root2:hover {
+        animation: shubhamAnimation 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes shubhamAnimation {
+        0% {
+          background-color: red;
+          width: 200px;
+        }
+        50% {
+          background-color: blue;
+          width: 300px;
+        }
+        100% {
+          background-color: green;
+          width: 500px;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+    "
+  >
+    <div id="root">This is #root</div>
+    <div id="root2">This is #root2</div>
+  </body>
+</html>
