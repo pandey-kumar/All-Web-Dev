@@ -13,6 +13,7 @@ function Car(make,model){
 
 /* 
 The new keyword is crucial here. When you use new:
+
 Step 1: It creates a new empty object.
 Step 2: It sets the prototype of this new object to Car.prototype.
 Step 3: It binds this inside the Car constructor function to the newly created object.

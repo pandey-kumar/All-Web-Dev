@@ -1,15 +1,15 @@
 # Javascript:-
 
-![alt text](image.png)
+![alt text](Images/image.png)
 
 >> Its v8 engine of chrome and Node.js which is a javascript runtime with the help of which you can run js inside your console . it helps you to provide a javascript runtime environment.
 
-![alt text](image-1.png)
+![alt text](Images/image-1.png)
 
 
 JIT --- just intime compiler (in built part of the node js)
 
-![alt text](image-2.png)
+![alt text](Images/image-2.png)
 
 
 > There are other executer of js also other than nodejs like bun , dino , etc
@@ -20,32 +20,32 @@ Everything in the javascript is an Object .
 
 // diagram
 
-![alt text](image-3.png)
+![alt text](Images/image-3.png)
 
 
 // Javascript a protype based or object based ?
 
-![alt text](image-4.png)
+![alt text](Images/image-4.png)
 
 
 # ProtoType :-  Extra property oe functionality Given in any data Types
 
-prop_name.__proto__  ![alt text](image-5.png)
+prop_name.__proto__  ![alt text](Images/image-5.png)
 
-// This image will shouw you how the real things are connected in chaining in the javascript via prototype{}
+// This Images/image will shouw you how the real things are connected in chaining in the javascript via prototype{}
 
-![alt text](image-6.png)
+![alt text](Images/image-6.png)
 
 
 # OOPS (Object oriendted Programming)
 
-![alt text](image-7.png)
+![alt text](Images/image-7.png)
 
 
 
 ## DOM and BOM  introduction diagram
 
-![alt text](<image-10.png>)
+![alt text](<Images/image-10.png>)
 
 # DOM Manipulation :-
 
@@ -54,12 +54,12 @@ we can do two things :-
 1. get The Element 
 2. Event Listening
 
-![alt text](image-8.png)
+![alt text](Images/image-8.png)
 
 
 # Diffrence between HTML and DOM
 
-![alt text](image-9.png)
+![alt text](Images/image-9.png)
 
 # Event Listeners 
 
@@ -73,11 +73,11 @@ while using event listeners like click in the js if you provide call back functi
 
 ## Aynchronous Nature of the javascript:-
 
-![alt text](image-11.png)
+![alt text](Images/image-11.png)
 
 ## Event loop mechanism :-
 
-![alt text](image-12.png)
+![alt text](Images/image-12.png)
 
 
 # Closure 
@@ -96,7 +96,7 @@ while using event listeners like click in the js if you provide call back functi
 
 >In JavaScript, call(), apply(), and bind() are methods used to control the value of this when invoking a function. They allow you to explicitly set the context (this) for a function, which is particularly useful when working with objects.
 
-![alt text](image-13.png)
+![alt text](Images/image-13.png)
 
 
 # Async and Await
