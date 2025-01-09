@@ -1,11 +1,21 @@
-// Lets grab every element required
+// I have to do anything whenever the DOM content is loaded:-
+
+document.addEventListener("DOMContentLoaded",()=>{
+    // Lets grab every element required
 
 const todoInput=document.getElementById("todo-input");
 const addTaskBtn=document.getElementById("add-task-btn");
 const todoList=document.getElementById("todo-list");
 
-// making an array to store the object values
-const tasks=[];
+// making an array to store the object values 
+// for first time it will be empty but after wards it should read from local storage
+// in local storage everything is in object format to parse in object
+
+const tasks= JSON.parse(localStorage.getItem("tasks"))||[];
+
+// i am also displaying every tasks on the console
+
+tasks.forEach((task)=>renderTask(task));
 
 // Addiing Event listener on adding some input and clicking on add Task btn
 
@@ -46,9 +56,23 @@ addTaskBtn.addEventListener("click",()=>{
     
             // Add the new task to the tasks array
             tasks.push(newTask);
-    
+            saveTask();
+
             todoInput.value = ""; // Clear the input box
             console.log(tasks);
-        }
+        
+    // Lets make a function to add  tasks to local storage when called everytime
+
+    function saveTask(){
+        localStorage.setItem("tasks",JSON.stringify(tasks));
+    }
+
+    // Lets also make a Function to read from the local storage
+    function renderTask(task){
+        console.log(task);
+    }
+}
     });
     
+
+})
